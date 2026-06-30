@@ -1,6 +1,7 @@
 service:
     nexus:
       images: sonatype/nexus3
+      container_name: nexus
       volumes:
         - "nexus/data:/sonatype-work"
       ports:

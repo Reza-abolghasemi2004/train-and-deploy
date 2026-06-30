@@ -16,6 +16,6 @@ service:
         INSTALL4J_ADD_VM_PARAMS: >-
           -Xms2g
           -Xmx2g
-
+          -XX:MaxDirectMemorySize=2g
 volumes:
   nexus-data: 

@@ -17,5 +17,14 @@ service:
           -Xms2g
           -Xmx2g
           -XX:MaxDirectMemorySize=2g
+          -Djava.util.prefs.userRoot=/nexus-data/javaprefs
+
+      healthcheck:
+        test: ["CMD", "curl", "-f", "http://localhost:8081"]
+        interval: 30s
+        timeout: 10s
+        retries: 5
+
+
 volumes:
   nexus-data: 

@@ -30,5 +30,14 @@ service:
           soft: 65536
           hard: 65536
 
+      networks:
+        nexus:
+
+
+
+
+networks:
+  nexus:
+    driver: bridge
 volumes:
   nexus-data: 

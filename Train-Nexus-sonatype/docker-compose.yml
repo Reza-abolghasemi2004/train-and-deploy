@@ -6,7 +6,8 @@ service:
       
       restart: unless-stopped
 
-
+      ports:
+        - "8081:8081"
 
 volumes:
   nexus-data: {}

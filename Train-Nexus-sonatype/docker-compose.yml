@@ -39,6 +39,9 @@ service:
           max-file: "5"
 
 
+      mem_limit: 4g
+      cpus: "2"
+
 
 networks:
   nexus:
